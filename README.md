@@ -1,4 +1,4 @@
-# [[PYTHON]: Missing Value Treatment with continuos Target (MTC)]() 
+# [[PYTHON]: Missing Value Treatment with continuos Target (MTC)](https://drive.google.com/drive/folders/1DN5DVYJZGCKE_FYV3rkUKMh29qYOwOus?usp=sharing) 
 
 - #### Creado, por: Franco A. Mansilla Ibañez, Chile.
 - website: https://www.francomansilla.com
@@ -15,35 +15,17 @@
 
 
 ## Instalación:
-- Paso 1: Es código que se puede utilizar en la misma interfaz usuario. 
-- Paso 2: 
+Nota 1: Es código que se puede utilizar en la misma interfaz usuario. 
+Nota 2: Descargar [BBDD](https://github.com/fmansillaib/python_MTC/blob/main/Ej.%20Imputacio%CC%81n%20Regresio%CC%81n.xlsx) y [.ipynb](https://github.com/fmansillaib/python_MTC/blob/main/Ej.%20MTC.ipynb) para ver los [ejemplos](https://drive.google.com/drive/folders/1DN5DVYJZGCKE_FYV3rkUKMh29qYOwOus?usp=sharing). 
+ 
 
 ## Syntax 
 
-En stata llamar, código:
+En Python copiar el código, señalar:
 
-```stata
-  psmote var_x's, var_y(variable) class_min(#) balance(#) sample(var_muestra) seed(#)
-```
-
-- [ ] **var_x:** Señalar la(s) variable(s) en que el código analizara. 
-- [ ] **var_y:** Señalar una única variable (grupo).
-- [ ] **sample:** Señalar variable muestra que contenga una marca con 1 las observaciones a introducir al proceso, si es para toda la muestra, señalar all_sample
--	[ ] **class_min:** Señalar la cantidad de observaciones que tiene clase minoritaria. 
--	[ ] **balance:** Señalar el porcentaje a completar la clase desequilibra con respecto a la clase completa (señalar entre 0 a 100 que equivale a 0% a 100%).
--	[ ] **seed:** Señalar la semilla de iniciación del código. 
-
-
-## Alcance:
-
-1. La variable clase tiene que estar codificada como 0 o 1, donde la clase 1 es el minoritario. En otra caso, deberá crear una variable con la nomenclatura señalada recién.
-2. La variables **var_x** y **var_y** deben estar ausentes de valores missing. Al dejar valores missing, la técnica rellenara esos valores missing. 
-3. Solo funciona para variable clase (**var_y**) dicotómica, no así categórica o continua; a no ser que haga la transformación respectiva a dicotómica. 
-
-## OUTPUT Ejemplo:
-- [ ] Sin aplicar el código pSMOTE:
-![sin pSMOTE](https://github.com/fmansillaib/stata_pSMOTE/blob/main/4.%20Imagenes/1.sin_psmote.png)
-
-- [ ] Con aplicar el código pSMOTE (balance 100):
-![con pSMOTE](https://github.com/fmansillaib/stata_pSMOTE/blob/main/4.%20Imagenes/2.con_psmote.png)
+- [ ] **umbral_unique**: Señalar el umbral de valores unicos para considerarlo como categorica o categorica de caracter continuo.
+- [ ] **umbral_nan**: Señalar el umbral de missing value para considerarlo en la imputación.
+- [ ] **variable_y**: Señalar la variable target para aplicar la imputación.
+- [ ] **variable_x**: Señalar la(s) variable(s) para imputar.
+- [ ] **muestra**: Señalar la muestra en la que se define muestras **TRAIN** y **TEST**.
 
