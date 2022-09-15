@@ -16,7 +16,7 @@
 
 ## Instalación:
 Nota 1: Es código que se puede utilizar en la misma interfaz usuario. 
-Nota 2: Descargar [BBDD](https://github.com/fmansillaib/python_MTC/blob/main/Ej.%20Imputacio%CC%81n%20Regresio%CC%81n.xlsx) y [.ipynb](https://github.com/fmansillaib/python_MTC/blob/main/Ej.%20MTC.ipynb) para ver los [ejemplos](https://drive.google.com/drive/folders/1DN5DVYJZGCKE_FYV3rkUKMh29qYOwOus?usp=sharing). 
+Nota 2: Descargar [BBDD] y [.ipynb] para ver los [ejemplos](https://drive.google.com/drive/folders/1DN5DVYJZGCKE_FYV3rkUKMh29qYOwOus?usp=sharing). 
  
 
 ## Syntax 
